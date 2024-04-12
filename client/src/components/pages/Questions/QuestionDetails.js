@@ -57,7 +57,7 @@ const QuestionDetails = () => {
             user==null?<h1>Loading...</h1>:
             <>
          {
-            questionsList.data.filter(question=> question._id == id).map(ques=>(
+            questionsList.data.filter(question=> question._id === id).map(ques=>(
                 <div key={ques._id}>
                     <section className='question-details'>
                         <h1>{ques.questionTitle}</h1>

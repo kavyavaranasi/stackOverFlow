@@ -30,7 +30,7 @@ const Navbar = () => {
             }
         }
         dispatch(setCurrentUser(JSON.parse(localStorage.getItem("Profile"))));
-    }, [dispatch, User, navigate]); // include User and navigate as dependencies
+    }, [dispatch, User, navigate,handleLogout]); // include User and navigate as dependencies
 
     return (
         <nav>
